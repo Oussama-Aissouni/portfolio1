@@ -9,7 +9,7 @@ export default function SkillsStack() {
 
 
   return (
-    <div className="flex w-full justify-center">
+    <div className="flex flex-col md:flex-row w-full justify-center items-center">
       {/* html */}
       <Skill name={"html"} cameraPos={[0, 0, 180]} modalPos={[0, -200, 0]}/>
       {/* css */}

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import {Element, animateScroll as scroll } from 'react-scroll';
 import Corner from './Corner';
-
+// import { write } from '../../scripts/script';
 
 
 export default function Home(props) {
@@ -10,7 +10,7 @@ export default function Home(props) {
       <Element name='about' className='h-[100vh] w-full dark:bg-[#1A2130] dark:text-white'>
         <Corner darkMode={props.darkMode}/>
         <div className="  flex justify-center items-center flex-col h-full w-[60%] m-auto">
-           <p>My name is Oussama 👋🏻</p>
+           <p id="textHolder"></p>
            <p>I code for fun, and as a job.</p>
            <p>I am a FullStack Dev.</p>
            <p>I build an enjoyable web experience that solves client's problems.</p>

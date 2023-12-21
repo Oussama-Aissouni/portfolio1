@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Corner(props) {
+
+    const [i, setI] = useState(props.darkMode);
 
     const icon = {
         sun : (
@@ -12,7 +14,7 @@ export default function Corner(props) {
     }
 
     return (
-        <div className={`absolute top-16 animate-sunrise`}>
+        <div className={`absolute top-16 animate-sunrise`} key={props.darkMode}>
             <div>
                 {props.darkMode ? icon.moon : icon.sun}
             </div>

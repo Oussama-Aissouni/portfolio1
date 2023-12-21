@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import ProjectsStack from './ProjectsStack';
 import {Element, animateScroll as scroll } from 'react-scroll';
 
-export default function Projects(props:any) {
+export default function Projects(props) {
 
   var settings = {
     dots: true,
